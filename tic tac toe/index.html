@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" ></script>
+    
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+     .container1{
+        background-color: aliceblue;
+        color: rgb(33, 43, 52);
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .container2{
+        background-color: #339fcd;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        
+     }
+     .container22{
+        height: 300px;
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+      
+     }
+     .container22 div{
+      background-color: aliceblue;
+      display: flex;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #339fcd;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+     
+     .container3{
+        background-color: #339fcd;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     
+     #restart{
+        padding: 10px 20px;
+        border-radius:6px ;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
+   
+     .container4{
+        background-color: #339fcd;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    </style>
+   
+<body>
+    <div class="container0">
+        <div class="container1">
+            <h2>OX GAME</h2>
+        </div>
+        <div class="container2 ">
+            <div class="container22">
+                <div  id="b1" onclick="check(this)"></div>
+                <div  id="b2" onclick="check(this);"></div>
+                <div  id="b3" onclick="check(this);"></div>
+            
+           
+                <div  id="b4"  onclick="check(this)"></div>
+                <div  id="b5" onclick="check(this)"></div>
+                <div  id="b6" onclick="check(this)"></div>
+            
+                <div  id="b7"  onclick="check(this)"></div>
+                <div  id="b8" onclick="check(this)"></div>
+                <div  id="b9"  onclick="check(this)"></div>
+            </div>
+               
+         
+           
+        </div>
+        <div class="container3" ><button id="restart" onclick="restart()">Restart</button></div>
+        <div class="container4"><p>@Developed By Gowtham</p></div>
+            
+    </div>
+          
+    
+    
+    <p id="print"></p>
+    
+</body>
+</html>
