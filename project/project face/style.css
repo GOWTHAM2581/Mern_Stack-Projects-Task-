@@ -304,7 +304,7 @@ body {
 }
 
 
-@media  screen and (max-width:370px) {
+@media  screen and (max-width:667px) {
   #header{
     padding: 5px 32px;
   }
