@@ -315,7 +315,7 @@ body {
     position: relative;
   }
   #hero {
-    background-image: url(image.png);
+    background-image: url(images/image.png);
     width: 560px;
     height: 100vh;
     background-size: cover;
