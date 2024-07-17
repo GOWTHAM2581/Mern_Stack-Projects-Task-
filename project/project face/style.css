@@ -272,53 +272,6 @@ body {
 
 /* newsletter section styles */
 
-#newsletter {
-  background-image: url(images/banner/b14.png);
-  background-repeat: no-repeat;
-  background-position: 180px;
-  background-color: #041e42;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 75px;
-}
-#newsletter .newsletter-text h3 {
-  color: white;
-  font-size: 30px;
-  padding: 0 0 15px 0;
-}
-#newsletter .newsletter-text h5 {
-  color: rgb(151, 151, 151);
-  font-size: 17px;
-}
-#newsletter .newsletter-text h5 span {
-  color: rgb(216, 182, 29);
-}
-#newsletter .form input {
-  padding: 20px;
-  width: 350px;
-  height: 56px;
-  background-color: #d1d0d0;
-  border-radius: 6px 0 0 6px;
-  font-size: 18px;
-
-  border: none;
-  outline: none;
-  margin-right: -4px;
-  margin-top: 1px;
-}
-#newsletter .form button {
-  margin-left: 0;
-  padding: 20px;
-  border: none;
-  width: 120px;
-  background-color: #088178;
-  color: white;
-  font-size: 17px;
-  border-radius: 0 6px 6px 0;
-  cursor: pointer;
-}
 
 /* footer section styles */
 
@@ -329,8 +282,7 @@ body {
   padding: 75px;
   background-color: #ececec;
 }
-#footer div{
-}
+
 #footer p, #footer a{
   color: rgb(109, 109, 109);
   text-decoration: none;
@@ -350,3 +302,111 @@ body {
   border: 1px solid #08817969;
   border-radius: 7px;
 }
+
+
+@media  screen and (max-width:370px) {
+  #header{
+    padding: 5px 32px;
+  }
+  .header-list-nav ul li {
+    margin-top: 23px;
+    list-style-type: none;
+    padding: 0 8px;
+    position: relative;
+  }
+  #hero {
+    background-image: url(image.png);
+    width: 560px;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 40px;
+  }
+
+  #features {
+    display: flex;
+    width:560px;
+    flex-wrap: wrap;
+  }
+
+  #features .f-box {
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0; 
+    transition: box-shadow 0.3s; 
+  }
+  .product-section{
+    width:560px;
+  }
+  .product-section h1,
+  .product-section p {
+   text-align: center;
+ 
+   }
+   .product-section .pro-collection{
+    display: flex;
+    flex-wrap: wrap; 
+     justify-content: space-around; 
+    margin: 0 30px;
+}
+.product-section .product-cart {
+  width: 230px;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s;
+}
+
+#header .header-logo img{
+  margin-top: 12px;
+  width: 90px;
+  height: 70px;
+}
+#footer .contact img{
+  /* margin-left: 12px; */
+  width: 90px;
+  height: 70px;
+} 
+#footer{
+  display: flex;
+  width:560px;
+  /* align-items:flex-start; */
+  /* justify-content: space-between; */
+  padding: 45px;
+  background-color: #ececec;
+}
+#footer .about{
+  margin-top: 110px;
+ 
+}
+#footer .contact {
+  font-size: small;
+}
+#footer .myaccount{
+  margin-top: 110px;
+  margin-left: 13px;
+}
+#footer .install{
+  margin-top: 110px;
+  margin-left: 30px;
+}
+#hero h2{
+  font-size: 67px;
+}
+#hero h1{
+  font-size: 47px;
+}
+#hero button{
+  margin-left: -29px;
+}
+   }
+  
